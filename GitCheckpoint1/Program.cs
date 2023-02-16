@@ -13,13 +13,13 @@ namespace GitCheckpoint1
         static void NewMessage()
         {
             CheckTest checkTest = new CheckTest();
-            Console.WriteLine(checkTest.TestMessage);
+            Console.WriteLine(checkTest.TestMessage());
+            
         }
         static void NewCalculation(int c)
         {
             Calculate calculate = new Calculate(c);
-            int v = c + 1 + 1;
-            Console.WriteLine(v);
+            Console.WriteLine(calculate.Z+2+4);
         }
     }
 }
