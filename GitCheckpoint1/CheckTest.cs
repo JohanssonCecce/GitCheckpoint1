@@ -8,9 +8,12 @@ namespace GitCheckpoint1
 {
     class CheckTest
     {
-        public void TestMessage()
+        public string Message { get; set; }
+        public void TestMessage(string testMessage)
         {
-            string testMessage = "Task 2 checked";
+            Message = testMessage;
+            Message = "Task 2 checked";
+
         }
     }
 }
